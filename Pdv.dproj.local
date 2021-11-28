@@ -2,11 +2,20 @@
 <BorlandProject>
   <Transactions>
     <Transaction>2021/11/27 22:43:06.935,=C:\Users\jeffe\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2021/11/27 22:44:51.820,D:\Workspace\Aplicacoes_delphi\projeto_pdv\Login.dfm=C:\Users\jeffe\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
     <Transaction>2021/11/27 22:44:51.820,D:\Workspace\Aplicacoes_delphi\projeto_pdv\Login.pas=C:\Users\jeffe\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/11/27 22:44:51.820,D:\Workspace\Aplicacoes_delphi\projeto_pdv\Login.dfm=C:\Users\jeffe\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
     <Transaction>2021/11/27 22:44:57.947,D:\Workspace\Aplicacoes_delphi\projeto_pdv\Pdv.dproj=C:\Users\jeffe\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
     <Transaction>2021/11/27 23:57:57.201,=D:\Workspace\Aplicacoes_delphi\projeto_pdv\Unit1.pas</Transaction>
-    <Transaction>2021/11/27 23:58:40.768,D:\Workspace\Aplicacoes_delphi\projeto_pdv\Menu.pas=D:\Workspace\Aplicacoes_delphi\projeto_pdv\Unit1.pas</Transaction>
     <Transaction>2021/11/27 23:58:40.768,D:\Workspace\Aplicacoes_delphi\projeto_pdv\Menu.dfm=D:\Workspace\Aplicacoes_delphi\projeto_pdv\Unit1.dfm</Transaction>
+    <Transaction>2021/11/27 23:58:40.768,D:\Workspace\Aplicacoes_delphi\projeto_pdv\Menu.pas=D:\Workspace\Aplicacoes_delphi\projeto_pdv\Unit1.pas</Transaction>
+    <Transaction>2021/11/28 00:28:36.091,=D:\Workspace\Aplicacoes_delphi\projeto_pdv\Unit1.pas</Transaction>
+    <Transaction>2021/11/28 00:28:51.977,D:\Workspace\Aplicacoes_delphi\projeto_pdv\Usuarios.pas=D:\Workspace\Aplicacoes_delphi\projeto_pdv\Unit1.pas</Transaction>
+    <Transaction>2021/11/28 00:28:51.977,D:\Workspace\Aplicacoes_delphi\projeto_pdv\Usuarios.dfm=D:\Workspace\Aplicacoes_delphi\projeto_pdv\Unit1.dfm</Transaction>
+    <Transaction>2021/11/28 00:35:56.726,D:\Workspace\Aplicacoes_delphi\projeto_pdv\cadastros\Usuarios.pas=D:\Workspace\Aplicacoes_delphi\projeto_pdv\Usuarios.pas</Transaction>
+    <Transaction>2021/11/28 00:35:56.726,D:\Workspace\Aplicacoes_delphi\projeto_pdv\cadastros\Usuarios.dfm=D:\Workspace\Aplicacoes_delphi\projeto_pdv\Usuarios.dfm</Transaction>
+    <Transaction>2021/11/28 00:36:10.569,=D:\Workspace\Aplicacoes_delphi\projeto_pdv\ModelSupport_Pdv\default.txaPackage</Transaction>
+    <Transaction>2021/11/28 00:36:31.111,=D:\Workspace\Aplicacoes_delphi\projeto_pdv\Unit1.pas</Transaction>
+    <Transaction>2021/11/28 00:36:51.495,D:\Workspace\Aplicacoes_delphi\projeto_pdv\cadastros\Funcionarios.pas=D:\Workspace\Aplicacoes_delphi\projeto_pdv\Unit1.pas</Transaction>
+    <Transaction>2021/11/28 00:36:51.495,D:\Workspace\Aplicacoes_delphi\projeto_pdv\cadastros\Funcionarios.dfm=D:\Workspace\Aplicacoes_delphi\projeto_pdv\Unit1.dfm</Transaction>
   </Transactions>
 </BorlandProject>

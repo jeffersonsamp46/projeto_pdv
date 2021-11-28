@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Imaging.pngimage,
-  Vcl.Imaging.jpeg, Vcl.StdCtrls, Vcl.Buttons;
+  Vcl.Imaging.jpeg, Vcl.StdCtrls, Vcl.Buttons ;
 
 type
   TFrmLogin = class(TForm)
@@ -33,6 +33,8 @@ var
 implementation
 
 {$R *.dfm}
+
+uses Menu;
 
 procedure TFrmLogin.btnLoginClick(Sender: TObject);
 var
@@ -71,8 +73,9 @@ end;
 
 procedure TFrmLogin.login;
 begin
-  // codigo do login
-  MessageDlg('Login Confirmado!', mtInformation, mbOKCancel, 0);
+  frmMenu:= TfrmMenu.Create(frmMenu);
+  frmMenu.ShowModal;
+
 end;
 
 end.
