@@ -2,8 +2,11 @@
 <BorlandProject>
   <Transactions>
     <Transaction>2021/11/27 22:43:06.935,=C:\Users\jeffe\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2021/11/27 22:44:51.820,D:\Workspace\Aplicacoes_delphi\projeto_pdv\Login.pas=C:\Users\jeffe\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2021/11/27 22:44:51.820,D:\Workspace\Aplicacoes_delphi\projeto_pdv\Login.dfm=C:\Users\jeffe\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021/11/27 22:44:51.820,D:\Workspace\Aplicacoes_delphi\projeto_pdv\Login.pas=C:\Users\jeffe\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2021/11/27 22:44:57.947,D:\Workspace\Aplicacoes_delphi\projeto_pdv\Pdv.dproj=C:\Users\jeffe\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2021/11/27 23:57:57.201,=D:\Workspace\Aplicacoes_delphi\projeto_pdv\Unit1.pas</Transaction>
+    <Transaction>2021/11/27 23:58:40.768,D:\Workspace\Aplicacoes_delphi\projeto_pdv\Menu.pas=D:\Workspace\Aplicacoes_delphi\projeto_pdv\Unit1.pas</Transaction>
+    <Transaction>2021/11/27 23:58:40.768,D:\Workspace\Aplicacoes_delphi\projeto_pdv\Menu.dfm=D:\Workspace\Aplicacoes_delphi\projeto_pdv\Unit1.dfm</Transaction>
   </Transactions>
 </BorlandProject>

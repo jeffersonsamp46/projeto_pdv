@@ -1,0 +1,69 @@
+unit Login;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Imaging.pngimage,
+  Vcl.Imaging.jpeg, Vcl.StdCtrls, Vcl.Buttons;
+
+type
+  TFrmLogin = class(TForm)
+    Panel1: TPanel;
+    Image1: TImage;
+    pnlLogin: TPanel;
+    Image2: TImage;
+    edLogin: TEdit;
+    edSenha: TEdit;
+    btnLogin: TSpeedButton;
+    procedure FormCanResize(Sender: TObject; var NewWidth, NewHeight: Integer;
+      var Resize: Boolean);
+    procedure btnLoginClick(Sender: TObject);
+  private
+    { Private declarations }
+    procedure centralizaPainel;
+    procedure login;
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmLogin: TFrmLogin;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFrmLogin.btnLoginClick(Sender: TObject);
+var
+  login, senha : string;
+begin
+  login:= Trim(edLogin.Text);
+  senha:= Trim(edSenha.Text);
+
+  if(login.IsEmpty or senha.IsEmpty)then
+  begin
+    MessageDlg('Login ou senha vazio', mtInformation, mbOKCancel, 0);
+    edLogin.SetFocus;
+  end;
+
+end;
+
+procedure TFrmLogin.centralizaPainel;
+begin
+  pnlLogin.Top:= (Self.Height div 2)  - (pnlLogin.Height div 2);
+  pnlLogin.Left:= (Self.Width div 2) - (pnlLogin.Width div 2);
+end;
+
+procedure TFrmLogin.FormCanResize(Sender: TObject; var NewWidth,
+  NewHeight: Integer; var Resize: Boolean);
+begin
+  centralizaPainel;
+end;
+
+procedure TFrmLogin.login;
+begin
+  // codigo do login
+end;
+
+end.
