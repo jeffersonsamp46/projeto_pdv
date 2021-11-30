@@ -16,11 +16,7 @@ type
     FDConnection1: TFDConnection;
     FDPhysPgDriverLink1: TFDPhysPgDriverLink;
     TbCargos: TFDTable;
-    TbCargosid: TLargeintField;
-    TbCargoscargo: TWideStringField;
     queryCargos: TFDQuery;
-    queryCargosid: TLargeintField;
-    queryCargoscargo: TWideStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

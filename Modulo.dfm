@@ -25,16 +25,6 @@ object dm: Tdm
     TableName = 'cargos'
     Left = 40
     Top = 72
-    object TbCargosid: TLargeintField
-      FieldName = 'id'
-      Origin = 'id'
-      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
-    end
-    object TbCargoscargo: TWideStringField
-      FieldName = 'cargo'
-      Origin = 'cargo'
-      Size = 30
-    end
   end
   object queryCargos: TFDQuery
     Connection = FDConnection1
@@ -42,16 +32,5 @@ object dm: Tdm
       'select * from cargos')
     Left = 40
     Top = 136
-    object queryCargosid: TLargeintField
-      DisplayLabel = 'ID:'
-      FieldName = 'id'
-      Origin = 'id'
-      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
-    end
-    object queryCargoscargo: TWideStringField
-      FieldName = 'Cargo:'
-      Origin = 'cargo'
-      Size = 30
-    end
   end
 end

@@ -23,6 +23,7 @@ type
     { Private declarations }
     procedure associarCampos;
     function validaForm: Boolean;
+    function existCargo(nomeCargo: string): Boolean;
   public
     { Public declarations }
   end;
@@ -90,10 +91,35 @@ begin
     edNome.SetFocus;
     Exit;
   end
+  else if(existCargo(cargo))then
+  begin
+    MessageDlg('Cargo já cadastrado', mtError, mbOKCancel, 0);
+    edNome.SetFocus;
+    Exit;
+  end
   else
   begin
     Result:= True;
   end;
+end;
+
+function TfrmCargos.existCargo(nomeCargo: string): Boolean;
+var
+  select : string;
+begin
+    select:= 'SELECT CARGO FROM cargos WHERE CARGO =  '+ QuotedStr(nomeCargo);
+    dm.queryCargos.SQL.Clear;
+    dm.queryCargos.Open(select);
+
+    if(dm.queryCargos.IsEmpty)then
+    begin
+      Result := False;
+    end
+    else
+    begin
+      Result := True;
+    end;
+
 end;
 
 end.
