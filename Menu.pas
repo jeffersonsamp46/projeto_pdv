@@ -17,9 +17,11 @@ type
     Relatrios1: TMenuItem;
     Sair1: TMenuItem;
     Usurios1: TMenuItem;
+    Cargos1: TMenuItem;
     procedure Sair1Click(Sender: TObject);
     procedure Usurios1Click(Sender: TObject);
     procedure Fornecedores1Click(Sender: TObject);
+    procedure Cargos1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -33,7 +35,13 @@ implementation
 
 {$R *.dfm}
 
-uses Usuarios, Funcionarios;
+uses Usuarios, Funcionarios, Cargos;
+
+procedure TfrmMenu.Cargos1Click(Sender: TObject);
+begin
+  frmCargos:= TfrmCargos.Create(frmCargos);
+  frmCargos.ShowModal;
+end;
 
 procedure TfrmMenu.Fornecedores1Click(Sender: TObject);
 begin

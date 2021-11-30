@@ -374,6 +374,10 @@ object frmMenu: TfrmMenu
         Caption = 'Usu'#225'rios'
         OnClick = Usurios1Click
       end
+      object Cargos1: TMenuItem
+        Caption = 'Cargos'
+        OnClick = Cargos1Click
+      end
     end
     object Estoque1: TMenuItem
       Bitmap.Data = {

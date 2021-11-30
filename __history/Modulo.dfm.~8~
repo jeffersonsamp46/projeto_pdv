@@ -1,0 +1,19 @@
+object dm: Tdm
+  OldCreateOrder = False
+  Height = 440
+  Width = 712
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'Database=pdv'
+      'User_Name=postgres'
+      'Password=admin'
+      'DriverID=PG')
+    Left = 144
+    Top = 120
+  end
+  object FDPhysPgDriverLink1: TFDPhysPgDriverLink
+    VendorHome = 'D:\Workspace\Aplicacoes_delphi\projeto_pdv'
+    Left = 112
+    Top = 232
+  end
+end

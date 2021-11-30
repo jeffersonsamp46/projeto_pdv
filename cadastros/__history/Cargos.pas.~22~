@@ -1,0 +1,98 @@
+unit Cargos;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.StdCtrls, Vcl.Grids,
+  Vcl.DBGrids;
+
+type
+  TfrmCargos = class(TForm)
+    btnDeletar: TButton;
+    btnEditar: TButton;
+    btnSalvar: TButton;
+    btnNovo: TButton;
+    DBGrid1: TDBGrid;
+    edNome: TEdit;
+    Label2: TLabel;
+    procedure btnNovoClick(Sender: TObject);
+    procedure btnSalvarClick(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+  private
+    { Private declarations }
+    procedure associarCampos;
+    function validaForm: Boolean;
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCargos: TfrmCargos;
+
+implementation
+
+{$R *.dfm}
+
+uses Modulo;
+
+{ TfrmCargos }
+
+procedure TfrmCargos.associarCampos;
+var
+  cargo : String;
+begin
+  cargo := UpperCase(Trim(edNome.Text));
+  dm.TbCargos.FieldByName('cargo').Value := cargo;
+end;
+
+procedure TfrmCargos.btnNovoClick(Sender: TObject);
+begin
+  dm.TbCargos.Insert;
+
+  btnSalvar.Enabled := True;
+  btnEditar.Enabled := False;
+  btnDeletar.Enabled := False;
+end;
+
+procedure TfrmCargos.btnSalvarClick(Sender: TObject);
+begin
+  if(validaForm) then
+  begin
+    associarCampos;
+    dm.TbCargos.Post;
+    MessageDlg('Salvo com sucesso.', mtInformation, mbOKCancel, 0);
+    edNome.Clear;
+    edNome.SetFocus;
+  end;
+end;
+
+procedure TfrmCargos.FormShow(Sender: TObject);
+begin
+  dm.TbCargos.Active := True;
+
+  btnNovo.Enabled := True;
+  btnSalvar.Enabled := False;
+  btnEditar.Enabled := False;
+  btnDeletar.Enabled := False;
+end;
+
+function TfrmCargos.validaForm: Boolean;
+var
+  cargo : string;
+begin
+
+  if(cargo.IsEmpty) then
+  begin
+    MessageDlg('Cargo inválido...', mtError, mbOKCancel, 0);
+    edNome.SetFocus;
+    Result:= False;
+    Exit;
+  end
+  else
+  begin
+    Result:= True;
+  end;
+end;
+
+end.
